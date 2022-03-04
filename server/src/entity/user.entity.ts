@@ -19,4 +19,9 @@ export class User {
   @Column()
   password!: string;
 
+  @Column({
+    default: ''
+  })
+  tfa_secret!: string;
+
 }
